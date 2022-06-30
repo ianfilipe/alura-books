@@ -20,7 +20,8 @@
   }
 
   .search {
-    border-style: none;
+    font-family: $font-family;
+    color: $white;
     border: 1px solid $white;
     border-radius: 24px;
     background: transparent;
@@ -33,5 +34,8 @@
     font-family: $font-family;
     font-size: 14px;
     color: $white;
+    background-image: url('../assets/images/Pesquisa.svg');
+    background-repeat: no-repeat;
+    background-position: 1em;
   }
 }
