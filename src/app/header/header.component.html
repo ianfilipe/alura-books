@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="container">
+    <input type="checkbox" id="menu" class="button">
+    <label for="menu">
+      <span class="menu"></span>
+    </label>
+    <ul class="menu-list">
+      <li class="title">Categorias</li>
+      <li class="item" *ngFor="let link of links">
+        <a class="link" href="{{ link.url }}">{{ link.name }}</a>
+      </li>
+    </ul>
+    <img src="assets/images/Logo.svg" alt="Logo da Alura Books">
+  </div>
+  <div class="container">
+    <a href="#"><img src="assets/images/Favoritos.svg" alt="Meus favoritos"></a>
+    <a href="#"><img src="assets/images/Compras.svg" alt="Carrinho de compras"></a>
+    <a href="#"><img src="assets/images/Usuário.svg" alt="Meu perfil"></a>
+  </div>
+</header>
