@@ -9,27 +9,11 @@
     display: flex;
     align-items: center;
 
-    .button {
-      display: none;
-    }
-
-    .menu {
-      width: 24px;
-      height: 24px;
-      background-image: url(../assets/images/Menu.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      display: inline-block;
-    }
-
-    .button:checked {
-      &~.menu-list {
-        display: block;
-      }
+    img {
+      padding: 0.5em;
     }
 
     .menu-list {
-      display: none;
       position: absolute;
       top: 100%;
       width: 60vw;

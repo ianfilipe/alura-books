@@ -1,10 +1,9 @@
 <header class="header">
   <div class="container">
-    <input type="checkbox" id="menu" class="button">
-    <label for="menu">
-      <span class="menu"></span>
-    </label>
-    <ul class="menu-list">
+    <span (click)="openMenu()">
+      <img src="assets/images/Menu.svg" alt="">
+    </span>
+    <ul class="menu-list" *ngIf="showMenu">
       <li class="title">Categorias</li>
       <li class="item" *ngFor="let link of links">
         <a class="link" href="{{ link.url }}">{{ link.name }}</a>

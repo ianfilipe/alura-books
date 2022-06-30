@@ -1,0 +1,37 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  padding: 2em 1.5em;
+  background: $blue-gradient;
+  text-align: center;
+  min-height: 215px;
+
+  .title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .text {
+    margin-bottom: 2em;
+    line-height: 24px;
+  }
+
+  .search {
+    border-style: none;
+    border: 1px solid $white;
+    border-radius: 24px;
+    background: transparent;
+    width: 100%;
+    height: 44px;
+  }
+
+  .search::placeholder {
+    text-align: center;
+    font-family: $font-family;
+    font-size: 14px;
+    color: $white;
+  }
+}

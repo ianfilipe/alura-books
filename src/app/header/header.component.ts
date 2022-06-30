@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  showMenu: boolean = false;
+
+  openMenu() {
+    this.showMenu = !this.showMenu
+  }
+
   links = [
     {
       url: '#',
