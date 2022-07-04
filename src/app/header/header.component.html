@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container">
-    <span (click)="openMenu()">
+    <span class="hidden" (click)="openMenu()">
       <img src="assets/images/Menu.svg" alt="">
     </span>
     <ul class="menu-list" *ngIf="showMenu">
@@ -10,9 +10,17 @@
       </li>
     </ul>
     <img src="assets/images/Logo.svg" alt="Logo da Alura Books">
+    <h1 class="logo"><b class="logo-bold">Alura</b>Books</h1>
   </div>
+
+  <ul class="options">
+    <li class="item"><a class="link" href="#">Categorias</a></li>
+    <li class="item"><a class="link" href="#">Meus favoritos</a></li>
+    <li class="item"><a class="link" href="#">Minha estante</a></li>
+  </ul>
+
   <div class="container">
-    <a href="#"><img src="assets/images/Favoritos.svg" alt="Meus favoritos"></a>
+    <a href="#"><img src="assets/images/Favoritos.svg" alt="Meus favoritos" class="hidden"></a>
     <a href="#"><img src="assets/images/Compras.svg" alt="Carrinho de compras"></a>
     <a href="#"><img src="assets/images/Usuário.svg" alt="Meu perfil"></a>
   </div>
