@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './card/card.component';
+import { CardAuthorComponent } from './card-author/card-author.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardComponent } from './card/card.component';
     HeaderComponent,
     BannerComponent,
     CarouselComponent,
-    CardComponent
+    CardComponent,
+    CardAuthorComponent
   ],
   imports: [
     BrowserModule,

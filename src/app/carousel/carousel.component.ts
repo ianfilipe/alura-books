@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 // import Swiper core and required modules
 import SwiperCore, { Pagination } from 'swiper';
@@ -12,6 +12,8 @@ SwiperCore.use([ Pagination ]);
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
+
+  @Input() title: string = ''
 
   constructor() { }
 
