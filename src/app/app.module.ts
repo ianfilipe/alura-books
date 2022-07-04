@@ -10,6 +10,9 @@ import { BannerComponent } from './banner/banner.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './card/card.component';
 import { CardAuthorComponent } from './card-author/card-author.component';
+import { RecentTopicsComponent } from './recent-topics/recent-topics.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { CardAuthorComponent } from './card-author/card-author.component';
     BannerComponent,
     CarouselComponent,
     CardComponent,
-    CardAuthorComponent
+    CardAuthorComponent,
+    RecentTopicsComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

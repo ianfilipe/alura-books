@@ -1,0 +1,27 @@
+.recent-topics {
+  background: $blue-gradient;
+  text-align: center;
+  color: $white;
+  padding: 1em 0;
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-weight: 300;
+  }
+  .labels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .label {
+      margin: 2em 0.5em;
+      .link {
+        color: $white;
+        background-color: $orange;
+        padding: 1em;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+}
