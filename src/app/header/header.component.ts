@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  showMenu: boolean = false;
+  showMenuMobile: boolean = false;
+  showMenuDesktop: boolean = false;
 
-  openMenu() {
-    this.showMenu = !this.showMenu
+  openMenuMobile() {
+    this.showMenuMobile = !this.showMenuMobile
+  }
+
+  openMenuDesktop() {
+    this.showMenuDesktop = !this.showMenuDesktop
   }
 
   links = [

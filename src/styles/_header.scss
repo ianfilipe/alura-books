@@ -68,6 +68,33 @@
     }
     .options { 
       display: flex;
+      .menu-list {
+        position: absolute;
+        top: 100%;
+        width: auto;
+  
+        .title {
+          color: $orange;
+          font-weight: 700;
+        }
+  
+        .item {
+          text-transform: uppercase;
+  
+          .link {
+            background: $blue-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+        }
+  
+        .title,
+        .item {
+          padding: 1em;
+          background-color: $white;
+        }
+      }
       .item {
         padding: 0 1em;
         text-transform: uppercase;

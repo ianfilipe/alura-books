@@ -1,9 +1,9 @@
 <header class="header">
   <div class="container">
-    <span class="hidden" (click)="openMenu()">
+    <span class="hidden" (click)="openMenuMobile()">
       <img src="assets/images/Menu.svg" alt="">
     </span>
-    <ul class="menu-list" *ngIf="showMenu">
+    <ul class="menu-list" *ngIf="showMenuMobile">
       <li class="title">Categorias</li>
       <li class="item" *ngFor="let link of links">
         <a class="link" href="{{ link.url }}">{{ link.name }}</a>
@@ -14,7 +14,15 @@
   </div>
 
   <ul class="options">
-    <li class="item"><a class="link" href="#">Categorias</a></li>
+
+    <li class="item"><span (click)="openMenuDesktop()">Categorias</span></li>
+
+    <ul class="menu-list" *ngIf="showMenuDesktop">
+      <li class="item" *ngFor="let link of links">
+        <a class="link" href="{{ link.url }}">{{ link.name }}</a>
+      </li>
+    </ul>
+
     <li class="item"><a class="link" href="#">Meus favoritos</a></li>
     <li class="item"><a class="link" href="#">Minha estante</a></li>
   </ul>
