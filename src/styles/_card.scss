@@ -1,0 +1,47 @@
+.card {
+  background-color: $white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+      .text {
+        margin-right: 1em;
+        .title {
+          color: $orange;
+          font-weight: 700;
+        }
+        .book-title {
+          font-size: 18px;
+          font-weight: 700;
+          color: $blue;
+          margin: 0.5em 0;
+        }
+        .book-subtitle {
+          font-size: 14px;
+        }
+      }
+  }
+
+  .buttons {
+    margin: 0.5em 0;
+    display: flex;
+    justify-content: space-between;
+    .buttons-list {
+      display: flex;
+      .button {
+        margin: 0 0.5em;
+      }
+    }
+    .button-more {
+      background-color: $orange;
+      padding: 1em 2.2em;
+      color: $white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}
