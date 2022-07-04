@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
 @import 'styles/reset';
 @import 'styles/fonts';
 @import 'styles/variables';
 @import 'styles/base';
 @import 'styles/header';
 @import 'styles/banner';
+@import 'styles/carousel';

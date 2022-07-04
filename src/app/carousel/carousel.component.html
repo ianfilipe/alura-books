@@ -1,1 +1,28 @@
-<p>carousel works!</p>
+<section class="carousel">
+  <h2 class="title">Novos Lançamentos</h2>
+</section>
+
+<div class="swiper-pagination"></div>
+
+<swiper
+  [slidesPerView]="3"
+  [spaceBetween]="10"
+  [pagination]="{ type: 'bullets', el: '.swiper-pagination'}"
+>
+  <ng-template swiperSlide>
+    <img src="assets/images/ApacheKafka.png" alt="">
+  </ng-template>
+  <ng-template swiperSlide>
+    <img src="assets/images/Liderança.png" alt="">
+  </ng-template>
+  <ng-template swiperSlide>
+    <img src="assets/images/Javascript.png" alt="">
+  </ng-template>
+  <ng-template swiperSlide>
+    <img src="assets/images/Guia Front-end.png" alt="">
+  </ng-template>
+  <ng-template swiperSlide>
+    <img src="assets/images/Portugol.png" alt="">
+  </ng-template>
+</swiper>
+
