@@ -21,6 +21,12 @@
       padding: 0.5em;
     }
 
+    .link {
+      .text {
+        display: none;
+      }
+    }
+
     .menu-list {
       position: absolute;
       top: 100%;
@@ -103,6 +109,26 @@
           text-decoration: none;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .header {
+    padding: 0 2em;
+    .container {
+      .link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $black;
+        .text {
+          display: block;
+        }
+      }
+    }
+    .options {
+      margin-right: auto;
     }
   }
 }
