@@ -1,20 +1,22 @@
 .contact {
   background-color: $white;
   padding: 1em;
-  .title,
-  .text {
-    background: $blue-gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .title {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .text {
-    font-weight: 300;
-    margin: 1em 0;
+  .container {
+    .title,
+    .text {
+      background: $blue-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .text {
+      font-weight: 300;
+      margin: 1em 0;
+    }
   }
   .email {
     padding: 1em;
@@ -28,6 +30,25 @@
       font-family: $font-family;
       color: $blue;
       padding-left: 2.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+      .title {
+        font-size: 24px;
+      }
+      .text {
+        margin-right: 1em;
+      }
+    }
+    .email {
+      width: 30%;
     }
   }
 }

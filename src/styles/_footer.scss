@@ -5,4 +5,35 @@ hr {
 .footer {
   background: $white;
   padding: 1em;
+  .list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    .title {
+      font-size: 24px;
+    }
+    .list {
+      display: block;
+      .title {
+        font-size: 14px;
+        color: $gray-light;
+        text-transform: uppercase;
+      }
+      .image {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+        .link {
+          margin-left: 0.6em;
+          color: $gray;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

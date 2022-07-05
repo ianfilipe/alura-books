@@ -45,3 +45,10 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .card {
+    margin: 2em auto;
+    width: 40%;
+  }
+}
