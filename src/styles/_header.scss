@@ -86,12 +86,19 @@
   
         .item {
           text-transform: uppercase;
+          &:hover {
+            background: $blue-gradient;
+          }
   
           .link {
             background: $blue-gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            &:hover {
+              background: none;
+              -webkit-text-fill-color: $white;
+            }
           }
         }
   
